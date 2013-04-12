@@ -4,6 +4,8 @@ SalesBoard is a script that will generate a sales graph using the [AppFigures AP
 
 SalesBoard uses your AppFigures credentials to ping their API and generate a JSON file that you can then load into SalesBoard. 
 
+![SalesBoard](https://github.com/justin/SalesBoard/raw/master/salesboard.jpg "SalesBoard")
+
 ### Installation
 
 0. Open Terminal and install the httparty gem (`gem install httparty`)
