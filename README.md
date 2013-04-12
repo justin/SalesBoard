@@ -26,7 +26,7 @@ In StatusBoard? Not that I know of. I built it for Second Gear's stuff. Hopefull
 
 ### Donations
 
-If you find this script useful, I'd love if you could show your support by either purchasing one of my products. Both are just $5.
+If you find this script useful, I'd love if you could show your support by purchasing one of my products. Both are just $5.
 
 * [Committed for OS X][c] - Get notified on your Mac whenever someone pushes code to a GitHub repository you care about.
 * [Elements for iOS][e] - One of those Dropbox and Markdown text editors.
