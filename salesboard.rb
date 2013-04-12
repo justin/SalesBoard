@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
+require 'rubygems'
 require 'httparty'
+require 'json'
 
 # SalesBoard - An AppFigures script for Status Board
 # Created by Justin Williams
