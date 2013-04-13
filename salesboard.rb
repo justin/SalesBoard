@@ -74,7 +74,7 @@ maxTotal = 0
 products.each do |p|
 salesData = []
 response = HTTParty.get("https://api.appfigures.com/v1.1/sales/dates/#{startDate}/#{endDate}/?data_source=daily&products=#{p[:id]}", options)
-    response.parsed_response.each do |day| 
+    response.parsed_response.each.sort.each do |day| 
         # Parse the date into something nicely readable.
         date = Date.parse(day[1]["date"])
         dateString = "#{months["#{date.month}"]} #{date.day}"        
