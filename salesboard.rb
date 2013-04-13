@@ -2,7 +2,7 @@
 
 require 'rubygems'
 require 'httparty'
-require 'json'
+require 'json/pure'
 
 # SalesBoard - An AppFigures script for Status Board
 # Created by Justin Williams
