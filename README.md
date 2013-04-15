@@ -8,7 +8,7 @@ SalesBoard uses your AppFigures credentials to ping their API and generate a JSO
 
 ### Installation
 
-0. Open Terminal and install the httparty gem (`gem install httparty`) and the json gem (`gem install json`)
+0. Open Terminal and install the httparty gem (`gem install httparty`) and the json/pure gem (`gem install json_pure`)
 1. Copy this `SalesBoard` folder somewhere.
 2. Open `salesboard.rb` and adjust the values inside the configuration block to match you're respective install. 
 3. Open `salesboard.sh` and update its path to the `salesboard.rb` script to match where you've installed it

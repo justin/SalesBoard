@@ -2,7 +2,7 @@
 
 require 'rubygems'
 require 'httparty'
-require 'json'
+require 'json/pure'
 
 # SalesBoard - An AppFigures script for Status Board
 # Created by Justin Williams
@@ -23,6 +23,7 @@ require 'json'
 salesDays = 30 # Number of days you want to see.
 userName = "justinbieber@gmail.com"  # Your AppFigures username 
 password = "neversaynever" # Your App Figures password 
+currency = "$" # The selected currency under your AppFigures account settings
 graphTitle = "My Company's Sales" # The title for the graph
 graphType = "line" # This can be 'bar' or 'line'
 displayTotal = false # Set to true if you want a total revenue listed at the end of the graph.
@@ -99,7 +100,7 @@ salesGraph = {
         :type => graphType,
         :yAxis => {
             "hide" => hideTotals,
-            :units => { :prefix => "$"},
+            :units => { :prefix => currency },
             :minValue => minTotal,
             :maxValue => maxTotal
         },        
