@@ -69,7 +69,7 @@ months = {
 options = { :basic_auth => { :username => userName , :password => password } }
 datasequences = []
 minTotal = 0
-maxTotal = 0
+maxTotal = 1
 
 # Iterate through each product listed above. 
 products.each do |p|
