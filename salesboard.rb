@@ -81,11 +81,19 @@ response = HTTParty.get("https://api.appfigures.com/v1.1/sales/dates/#{startDate
         dateString = "#{months["#{date.month}"]} #{date.day}"        
 
         # We're rounding the sales data.
+        # Uncomment these lines to get sales revenue
         revenue = comma_numbers(day[1]["revenue"].to_i)        
         maxTotal = revenue.to_i if revenue.to_i > maxTotal
         minTotal = revenue.to_i if revenue.to_i < minTotal || minTotal == 0
 
         salesData << { :title => dateString, :value => revenue } 
+
+        # Uncomment these lines for downloads, and comment out line 111 to remove currency labels
+        # downloads = comma_numbers(day[1]["downloads"].to_i)
+        # maxTotal = downloads.to_i if downloads.to_i > maxTotal
+        # minTotal = downloads.to_i if downloads.to_i < minTotal || minTotal == 1
+
+        # salesData << { :title => dateString, :value => downloads } 
     end
 
     # Add the product to the data sequences.
