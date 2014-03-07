@@ -8,10 +8,11 @@ SalesBoard uses your AppFigures credentials to ping their API and generate a JSO
 
 ### Installation
 
-0. Open Terminal and install the httparty gem (`gem install httparty`) and the json/pure gem (`gem install json_pure`)
-1. Copy this `SalesBoard` folder somewhere.
-2. Open `salesboard.rb` and adjust the values inside the configuration block to match you're respective install. 
-3. Open `salesboard.sh` and update its path to the `salesboard.rb` script to match where you've installed it
+0. Open Terminal and install the required gems  `gem install httparty json_pure terminal-notifier`  
+1. Copy this `SalesBoard` folder somewhere.  
+1. Get yourself an AppFigure API key and note down the Client Key.
+2. Open `salesboard.rb` and adjust the values inside the configuration block to match you're respective install.  
+3. Open `salesboard.sh` and update its path to the `salesboard.rb` script to match where you've installed it  
 4. Open `com.secondgear.salesboard.plist` and update its `ProgramArguments` value to match where you are storing the salesboard.sh file you just updated in step 3.
 5. Copy com.secondgear.salesboard.plist to `~/Library/LaunchAgents` 
 6. Open Termimal and run `launchctl load ~/Library/LaunchAgents/com.secondgear.salesboard.plist`. This should generate the first version of your json file.
@@ -19,11 +20,11 @@ SalesBoard uses your AppFigures credentials to ping their API and generate a JSO
 8. Get rich or die tryin'.
 
 ### Known Issues
-
 Personally? Too many to list.
 
 In StatusBoard? Not that I know of. I built it for Second Gear's stuff. Hopefully you'll find it useful too until AppFigures comes out with their own support.
-
+### To Do
+Add code block to grab all product IDs automatically and process  
 ### Donations
 
 If you find this script useful, I'd love if you could show your support by purchasing one of my products. Both are just $5.
@@ -42,3 +43,6 @@ Wanna say hi? I'm on Twitter at [@justin][tw]
 [c]: http://bit.ly/committed10
 [e]: http://bit.ly/elements20
 [tw]: http://twitter.com/justin
+
+Changelog:
+2014-03-06: Amended script to support AppFigures API v2 [\[Dom Barnes\]](http://github.com/dombarnes)
