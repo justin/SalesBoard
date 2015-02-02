@@ -2,7 +2,7 @@
 
 SalesBoard is a script that will generate a sales graph using the [AppFigures API][af] for display in Panic's new app [Status Board][sb].
 
-SalesBoard uses your AppFigures credentials to ping their API and generate a JSON file that you can then load into SalesBoard. 
+SalesBoard uses your AppFigures credentials to ping their API and generate a JSON file that you can then load into SalesBoard.
 
 ![SalesBoard](https://github.com/justin/SalesBoard/raw/master/salesboard.jpg "SalesBoard")
 
@@ -14,7 +14,7 @@ SalesBoard uses your AppFigures credentials to ping their API and generate a JSO
 2. Open `salesboard.rb` and adjust the values inside the configuration block to match you're respective install.  
 3. Open `salesboard.sh` and update its path to the `salesboard.rb` script to match where you've installed it  
 4. Open `com.secondgear.salesboard.plist` and update its `ProgramArguments` value to match where you are storing the salesboard.sh file you just updated in step 3.
-5. Copy com.secondgear.salesboard.plist to `~/Library/LaunchAgents` 
+5. Copy com.secondgear.salesboard.plist to `~/Library/LaunchAgents`
 6. Open Termimal and run `launchctl load ~/Library/LaunchAgents/com.secondgear.salesboard.plist`. This should generate the first version of your json file.
 7. Go to Dropbox and get a shareable link for the JSON file that is output and add it to Status Board on your iPad.
 8. Get rich or die tryin'.
@@ -22,7 +22,7 @@ SalesBoard uses your AppFigures credentials to ping their API and generate a JSO
 ### Known Issues
 Personally? Too many to list.
 
-In StatusBoard? Not that I know of. I built it for Second Gear's stuff. Hopefully you'll find it useful too until AppFigures comes out with their own support.
+In Status Board? Not that I know of. I built it for Second Gear's stuff. Hopefully you'll find it useful too until AppFigures comes out with their own support.
 ### To Do
 Add code block to grab all product IDs automatically and process  
 ### Donations
@@ -46,3 +46,4 @@ Wanna say hi? I'm on Twitter at [@justin][tw]
 
 Changelog:
 2014-03-06: Amended script to support AppFigures API v2 [\[Dom Barnes\]](http://github.com/dombarnes)
+2015-01-26: Updated for new features in Status Board, inc refresh time, scale to values and more added in Status Board v1.2 [\[Dom Barnes\]](http://github.com/dombarnes)
